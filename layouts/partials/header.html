@@ -1,0 +1,22 @@
+<header class="site-header" role="banner">
+    <div class="site-logo">
+        <figure class="o-logo">
+        <a href="/" class="c-logo-link" >
+            <img src="/img/site_logo.svg" class="c-logo-image" alt="logo" />
+        </a>
+        </figure>
+        <a href="/" class="site-title"><h1>{{ $.Site.Title }}</h1></a>
+    </div>
+    <nav class="o-site-nav">    
+        <ul class="c-flat-list" >
+            {{ range .Site.Menus.main }}
+            <li class="list-item">
+                <a href="{{ .URL }}">
+                <div class="img-container">{{ .Pre }}</div>
+                <span>{{- .Name -}}</span>
+                </a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
+</header>

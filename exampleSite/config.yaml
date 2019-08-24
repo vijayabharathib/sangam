@@ -1,0 +1,47 @@
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "Sangam Theme"
+theme: "sangam"
+themesdir: "../.."
+params: 
+  subtitle: "Hugo Theme For Business"
+menu:
+  main:
+      - Name: "Home"
+        Identifier: "home"
+        URL: "/"
+        weight: 111
+        Pre: "<img src='/img/home.png' class='c-menu-icon' alt='Home' />"
+      - Name: "About"
+        Identifier: "about"
+        URL: "/about/"
+        weight: 222
+        Pre: "<img src='/img/about.png' class='c-menu-icon' alt='Home' />"
+      - Name: "Research"
+        Identifier: "research"
+        URL: "/research/"
+        weight: 333
+        Pre: "<img src='/img/research.png' class='c-menu-icon' alt='Home' />"
+      - Name: "Contact"
+        Identifier: "contact"
+        URL: "/contact/"
+        weight: 444
+        Pre: "<img src='/img/contact.png' class='c-menu-icon' alt='Home' />"
+      - Name: More
+        Pre: "<img src='/img/more.png' class='c-menu-icon' alt='Home' />"
+      # - Name: "Press"
+      #   Identifier: "press"
+      #   URL: "/press/"
+      #   weight: 555
+      #   Pre: "<img src='/img/press.png' class='c-menu-icon' alt='Home' />"
+      # - Name: "Performance"
+      #   Identifier: "performance"
+      #   URL: "/performance/"
+      #   weight: 666
+      #   Pre: "<img src='/img/performance.png' class='c-menu-icon' alt='Home' />"
+      # - Name: Investment Philosophy
+      #   Identifier: "philosophy"
+      #   URL: "/investment-philosophy/"
+      #   weight: 777
+      #   Pre: "<img src='/img/philosophy.png' class='c-menu-icon' alt='Home' />"
+  
