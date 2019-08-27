@@ -11,37 +11,40 @@ menu:
         Identifier: "home"
         URL: "/"
         weight: 111
-        Pre: "<img src='/img/home.png' class='c-menu-icon' alt='Home' />"
+        Pre: "icon-home"
       - Name: "About"
         Identifier: "about"
         URL: "/about/"
         weight: 222
-        Pre: "<img src='/img/about.png' class='c-menu-icon' alt='Home' />"
+        Pre: "icon-about"
       - Name: "Research"
         Identifier: "research"
         URL: "/research/"
         weight: 333
-        Pre: "<img src='/img/research.png' class='c-menu-icon' alt='Home' />"
+        Pre: "icon-research"
       - Name: "Contact"
         Identifier: "contact"
         URL: "/contact/"
         weight: 444
-        Pre: "<img src='/img/contact.png' class='c-menu-icon' alt='Home' />"
+        Pre: "icon-contact"
       - Name: More
-        Pre: "<img src='/img/more.png' class='c-menu-icon' alt='Home' />"
+        Pre: "icon-more"
       # - Name: "Press"
       #   Identifier: "press"
       #   URL: "/press/"
       #   weight: 555
-      #   Pre: "<img src='/img/press.png' class='c-menu-icon' alt='Home' />"
+    
+      #   Pre: "icon-home"
       # - Name: "Performance"
       #   Identifier: "performance"
       #   URL: "/performance/"
       #   weight: 666
-      #   Pre: "<img src='/img/performance.png' class='c-menu-icon' alt='Home' />"
+    
+      #   Pre: "icon-home"
       # - Name: Investment Philosophy
       #   Identifier: "philosophy"
       #   URL: "/investment-philosophy/"
       #   weight: 777
-      #   Pre: "<img src='/img/philosophy.png' class='c-menu-icon' alt='Home' />"
+    
+      #   Pre: "icon-home"
   

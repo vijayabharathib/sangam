@@ -9,11 +9,12 @@
     </div>
     <nav class="o-site-nav">    
         <ul class="c-flat-list" >
+            {{ $currentPage := . }}
             {{ range .Site.Menus.main }}
-            <li class="list-item">
+            <li class='list-item {{ if (eq $currentPage.URL .URL) }}active{{ end }}'>
                 <a href="{{ .URL }}">
-                <div class="img-container">{{ .Pre }}</div>
-                <span>{{- .Name -}}</span>
+                    <svg class="icon {{ .Pre }}"><use xlink:href="/img/svg_sprite.svg#{{- .Pre -}}"></use></svg>
+                    <span>{{- .Name -}}</span>
                 </a>
             </li>
             {{ end }}
