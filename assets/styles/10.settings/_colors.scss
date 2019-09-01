@@ -1,17 +1,24 @@
-$color-teal-dark: #233;
-$color-teal-light: #bee;
-$color-teal-lighter: #bff;
-$color-red-light: #f9a;//#fcd;
-$color-blue-light: #8bf;//#adf;
-$color-yellow-light: #ffc;
-$color-orange-light: #fc6;//#ea8;
-$color-pink-light:  #f04;
-$color-white-default: #fff;
-$color-green-light: #cf9;
-$color-violet-dark: #223;
-$color-grey-light: #bbc;
+$color-primary-0: #b47;
+$color-primary-1: #fef;
+$color-primary-2: #ebe;
+$color-primary-3: #835;
+$color-primary-4: #523;
+$color-primary-white: #fffcfc;
 
-$color-brand: #c04;
-$color-page-background: $color-violet-dark;
-$color-text: $color-grey-light;
-$color-link: $color-blue-light;
+$color-grey-0: #423;	// Main grey color */
+$color-grey-1: #756;
+$color-grey-2: #534;
+$color-grey-3: #312;
+$color-grey-4: #201;
+
+$color-complement-0: #7B2;	// Main Complement color */
+$color-complement-1: #ae6;
+$color-complement-2: #8d4;
+$color-complement-3: #591;
+$color-complement-4: #360;
+
+
+$color-brand: $color-primary-3;
+$color-page-background: $color-primary-white;
+$color-text: $color-primary-4;
+$color-link: $color-primary-3;

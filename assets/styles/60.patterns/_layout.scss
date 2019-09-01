@@ -15,14 +15,13 @@ html, body {
   }
 }
 
-
 .site-main {   
-    margin: 0 auto;
-    max-width: 40em;
-    max-width: calc(40em + 1vw);
+    // margin: 0 auto;
+    // max-width: 40em;
+    // max-width: calc(40em + 1vw);
     grid-area: main;
-    padding: calc(.5em + 2vw);
-    border: 1px solid #055;
+    // padding: calc(.5em + 2vw);
+    // border: 1px solid #055;
   }
   
   .site-header {

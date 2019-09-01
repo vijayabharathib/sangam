@@ -1,0 +1,22 @@
+
+.cta {
+    margin: .5em;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+    margin-top: 3em;
+}
+
+a.cta-link {
+    color: $color-complement-3;
+    background: #cf9;
+    text-decoration: none;
+    padding: .5em;
+    font-size: 1.5em;
+    font-weight: 600;
+    border-radius: 1em;
+    display:  inline-block;
+    box-shadow: 2px 2px 20px 5px white;
+    border: 1px solid white;
+}

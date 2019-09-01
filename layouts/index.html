@@ -1,5 +1,7 @@
 {{ define "main"}}
-  <div class="front-page">
-      {{ .Content }}
+  <div class="hero">
+    <h2>{{ .Title }}</h2>
+    <p>{{ .Content }}</p>
+    <div class="cta"><a class="cta-link" href="{{ .Params.cta_link }}">{{ .Params.cta }}</a></div>
   </div>
 {{ end }}

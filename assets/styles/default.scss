@@ -7,11 +7,19 @@
 /* Reset problematic defaults */ 
 @import "20.resets/reset";
 
+/* Primitive Settings */
+@import "30.primitives/base";
+
 /* Components */
 @import "40.components/list";
+@import "40.components/logo";
+@import "40.components/menu";
+@import "40.components/cta";
+@import "40.components/hero";
 
 /* Blocks */
 @import "50.blocks/header";
+@import "50.blocks/footer";
 @import "50.blocks/page";
 
 /* Layouts & Patterns */

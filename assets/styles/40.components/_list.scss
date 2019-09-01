@@ -1,13 +1,24 @@
+
 .c-flat-list {
     &#{&} {
-        display: inline-flex;
-        flex-wrap: wrap;
+        display: flex;
         padding: 0;
-        justify-content: space-around;
-        width: 100%;
+        justify-content: center;
+        max-width: 600px;
+        margin: 0 auto;
+        @media (min-width: $break-point-small) {
+            margin: 0 0 0 auto;
+        }
     }
     li {
         display: inline-block;
         padding: 5px;
+        flex-basis: 100%;
+    }
+    span {
+        text-align: center;
+        // overflow: hidden;
+        // max-width: 120px;
+        text-overflow: ellipsis;
     }
 }

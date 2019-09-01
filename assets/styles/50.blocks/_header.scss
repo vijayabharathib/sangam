@@ -1,110 +1,27 @@
-$break-point: 700px;
-
-.site-header { &#{&} {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: lightseagreen;
-  flex-direction: column;
-  @media (min-width: $break-point){
-    flex-direction: row;
-  }}
+.site-header {
+  &#{&}{
+    background: $color-primary-3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (min-width: $break-point-small) {
+      flex-direction: row;
+    }
+  }
 }
-  
-  .site-logo {
-    &#{&} {
-      display: flex;
-      align-items: center;
-      min-width: fit-content;
-      padding: 1em;
-    }
-  
-    h1, .o-logo{
-      margin: 0 1em;
-    }
-  }
- 
-  .c-logo-link { &#{&} {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }}
-  
-  .c-logo-image { &#{&} {
-    width: 100%;
-    height: 100%;
-    max-width: 50px;
-  }}
-  
-  .site-title { &#{&}{
-    text-decoration: none; 
-    color: white; 
-  }
-  & h1{
-    margin: 0;
-    font-size: 2em;
-    font-size: calc(2em + .02vw);
-    }
-  }
-  
-  .o-site-nav { &#{&} {
-      margin-bottom: 1em;
-      width: 100%;
-      font-size: 1.2em;
-      max-width: fit-content;
-    }
-  
-    ul { margin-top: .5em; }
-  
-    @include respond-to($break-point-large){
-      li {
-        padding: 5px 20px;
-      }
-    }
-  }
 
-  .list-item {
-    max-width: 100px;
-    margin: 0 .5em;
+.o-site-nav {
+  &#{&} {
+    flex: 1 0 auto;
+  }
+  ul {
+    margin-top: .5em;
   }
   
-  .img-container {
-    height: 36px;
-    vertical-align: middle;
-  }
-  .list-item {
-    img {
-      display: block;
-      margin: 0 auto;
-      max-width: 32px;
-    }
-
-    a {
-      text-decoration: none;
-      color: white;
-      display: flex;
-      flex-direction: column;
-    }
-
-    &.active  {
-      border: 1px solid #055;
-      border: calc(1px + .1vw) solid #055;
-      border-bottom: 5px solid #055;
-      border-bottom: calc(5px + .5vw) solid #055;
-      border-radius: 3px;
-      border-radius: calc(3px + .1vw);
+  @media (min-width: $break-point-small) {
+    margin-left: auto;
+    li {
+      padding: 5px 20px;
     }
   }
-
-  svg.icon {
-    width: 100%;
-    max-width: 32px;
-    max-width: calc(28px + 1vw);
-    max-height: calc(48px + .1vw);
-    margin: 5px auto;
-    
-    use {
-      fill: #055;
-    }
-  }
+}

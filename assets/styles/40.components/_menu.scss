@@ -1,0 +1,60 @@
+
+.list-item {
+    &#{&} {
+        @media (min-width: $break-point-small) {
+            flex-basis: 100%;
+        }
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 32px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-brand;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
+    &.active {
+        border-bottom: 3px solid $color-page-background;
+        border-bottom: calc(3px + .3vw) solid $color-page-background;
+        background: $color-primary-white;
+        a {
+            color: $color-brand;
+        }
+    }
+
+    &:not(.active):hover {
+        background: $color-primary-white;
+        a {
+            color: $color-brand;
+        }
+    }
+}
+
+svg.icon {
+    width: 100%;
+    max-width: 32px;
+    max-width: calc(28px + 1vw);
+    max-height: calc(48px + .1vw);
+    margin: 5px auto;
+
+    use {
+        fill: $color-primary-white;
+
+        .active & {
+            fill: $color-brand;
+        }
+
+        .list-item:hover & {
+            fill: $color-brand;
+        }
+    }
+
+}

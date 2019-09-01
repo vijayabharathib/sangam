@@ -1,4 +1,7 @@
+---
+title: Remember that this is just a theme. 
+cta: Invest Now
+cta_link: /contact/
+---
 
-# You are in the right place
-
-Here, getting your business done is faster and easier. 
+Money does not grow in trees. But it does grow when you invest with us. 

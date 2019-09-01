@@ -1,0 +1,13 @@
+.hero {
+    background: $color-brand;
+    padding: 2em;
+    text-align: center;
+    color: $color-primary-white;
+    h2 {
+        display: inline-block;
+    }
+
+    p {
+        color: $color-primary-2;
+    }
+}
