@@ -1,7 +1,11 @@
 {{ define "main"}}
   <div class="hero">
-    <h2>{{ .Title }}</h2>
-    <p>{{ .Content }}</p>
-    <div class="cta"><a class="cta-link" href="{{ .Params.cta_link }}">{{ .Params.cta }}</a></div>
+    <section class="intro">
+      <h2>{{ .Title }}</h2>
+      <p>{{ .Content }}</p>
+      <div class="cta"><a class="cta-link" href="{{ .Params.cta_link }}">{{ .Params.cta }}</a></div>
+    </section>
+    <section class="hero-image">
+    </section>
   </div>
 {{ end }}

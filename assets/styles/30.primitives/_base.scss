@@ -18,3 +18,12 @@ html {
     letter-spacing: 0.02em;
     word-spacing: .1em;
 }
+
+body {
+    height: 100%;
+    // background-image: linear-gradient(to bottom, rgba(10,10,10,.5), rgba(20,20,20,.5)), url(/img/hero.jpg);
+    // background: url(/img/hero.jpg) no-repeat center center fixed;
+    // background-position: 50% center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+}
