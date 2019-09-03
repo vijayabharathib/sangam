@@ -22,3 +22,15 @@
         text-overflow: ellipsis;
     }
 }
+
+.c-vertical-list {
+    list-style: none;
+    line-height: 1.618;
+    padding: 0;
+    a {
+        color: $color-primary-2;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}

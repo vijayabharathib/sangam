@@ -14,7 +14,7 @@ menu:
         Pre: "icon-home"
       - Name: "About"
         Identifier: "about"
-        URL: "/about/"
+        URL: "/pages/about/"
         weight: 222
         Pre: "icon-about"
       - Name: "Research"
@@ -24,7 +24,7 @@ menu:
         Pre: "icon-research"
       - Name: "Contact"
         Identifier: "contact"
-        URL: "/contact/"
+        URL: "/pages/contact/"
         weight: 444
         Pre: "icon-contact"
       - Name: More
