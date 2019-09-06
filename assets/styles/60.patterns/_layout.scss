@@ -42,7 +42,6 @@ body {
 
 .side-bar {
   grid-area: aside;
-  border: 1px solid grey;
 }
 
 .site-footer {
@@ -68,9 +67,6 @@ body {
 .content-aside {
   flex-grow: 2;
   @media (min-width: $break-point-small) {
-    box-shadow: 0 12px 58px rgba(0,0,0,.3);
-    padding: 1em;
-    background: #fafafa;
     flex-basis: 50%;
     margin-left: 5vw;
     body:not(.home) & {

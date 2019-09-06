@@ -1,0 +1,38 @@
+.feed {
+    line-height: 1.2em;
+    a {
+        text-decoration: none;
+        
+    }
+    
+    h3 {
+        margin-bottom: 0;
+        font-size: 1.3em;
+        font-size: calc(1.3em + .5vw);
+        font-weight: 200;
+        border-bottom: 1px solid $color-contrast;
+        padding-bottom: .3em;
+        
+    }
+    .c-feed-list {
+        list-style: none;
+        padding: 0;
+        
+        li {
+            margin: 1em 0;
+        }
+        
+        h4 {
+            line-height: 1em;
+            font-size: 1em;
+            margin: 0;
+            
+        }
+
+        p {
+            margin: .5em 0;
+            font-size: .8em;
+            line-height: 1.2em;
+        }
+    }
+}

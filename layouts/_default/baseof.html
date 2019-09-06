@@ -13,8 +13,8 @@
             <main class="site-main">
                 {{ $home_class := $.Scratch.Get "home_class" }}
                 <div class="main-content {{ $home_class }}">{{- block "main" . }}{{- end }}</div>
-                {{ if templates.Exists "partials/side-bar.html" }}
-                    <div class="content-aside">{{- partial "side-bar.html" . -}}</div>
+                {{ if templates.Exists "partials/sidebar.html" }}
+                    <div class="content-aside" role="complementary">{{- partial "sidebar.html" . -}}</div>
                 {{ end }}
             </main>
             {{- partial "footer.html" . -}}

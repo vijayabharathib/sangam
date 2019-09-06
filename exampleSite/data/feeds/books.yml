@@ -1,0 +1,10 @@
+feed: 
+  name: Books
+  list:
+    - Title: A sample book title. The best book ever to cover finance
+      Description: All about finance that you need to know for you to grow rich!
+      URL: /
+      new: new
+    - Title: Another sample. The best book ever to cover taxes
+      Description: All about taxes is addressed here so much so that you never have to pay the government ever again.
+      URL: /

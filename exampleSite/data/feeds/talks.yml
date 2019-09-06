@@ -1,0 +1,10 @@
+feed: 
+  name: Talks
+  list:
+    - Title: Talk at a college not too far from Chennai that had 200 students in the audience.
+      Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sed viverra ipsum nunc aliquet bibendum enim. In massa tempor nec feugiat. Nunc aliquet bibendum enim facilisis gravida.
+      URL: /research/
+    - Title: Talk at a fortune 500 organization telling their employees how to save tax irrespective of salary range.
+      Description: Etiam tempor orci eu lobortis elementum nibh tellus molestie. Neque egestas congue quisque egestas. Egestas integer eget aliquet nibh praesent tristique.
+      URL: /research/
+
