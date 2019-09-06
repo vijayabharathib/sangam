@@ -22,8 +22,7 @@
     }
 
     &.active {
-        border-bottom: 3px solid $color-page-background;
-        border-bottom: calc(3px + .3vw) solid $color-page-background;
+        
         background: $color-primary-white;
         a {
             color: $color-brand;
@@ -46,7 +45,8 @@ svg.icon {
     margin: 5px auto;
 
     use {
-        fill: $color-primary-white;
+        fill: $color-contrast;
+        fill: transparentize($color-contrast-light,.05);
 
         .active & {
             fill: $color-brand;

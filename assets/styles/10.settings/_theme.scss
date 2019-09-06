@@ -1,0 +1,2 @@
+$color-brand: {{ .Site.Params.brand_color | default "#835"}};
+$color-contrast: {{ .Site.Params.contrast_color | default "#295"}};

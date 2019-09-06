@@ -5,6 +5,8 @@ theme: "sangam"
 themesdir: "../.."
 params: 
   subtitle: "Hugo Theme For Business"
+  brand_color: "#444"
+  contrast_color: ""
 menu:
   main:
       - Name: "Home"
@@ -46,5 +48,5 @@ menu:
       #   URL: "/investment-philosophy/"
       #   weight: 777
     
-      #   Pre: "icon-home"
+      #   Pre: "icon-home" 
   

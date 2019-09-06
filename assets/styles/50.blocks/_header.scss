@@ -1,7 +1,6 @@
 .site-header {
   &#{&}{
-    background: $color-primary-3;
-    // background: transparentize($color-primary-3, .20);
+    background: $color-brand-dark;
     display: flex;
     flex-direction: column;
     justify-content: center;

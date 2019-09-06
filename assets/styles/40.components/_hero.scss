@@ -17,7 +17,7 @@
     h2 {
         display: inline-block;
         font-size: 1.5em;
-        max-width: 80%
+        max-width: 80%;
     }
 
     p {
@@ -29,16 +29,13 @@
         color: $color-primary-white;
         align-items: stretch;
         flex-direction: row;
-        margin: 2em auto;
-        height: 75vh;
-        max-width: 66%;
-        box-shadow: 1em 1em 0px 2px rgba(90, 30, 60, .9);
-        box-shadow: 1em 1em 0px 2px transparentize(darken($color-primary-3,10%),.1);
+        margin: 0 auto;
+        // box-shadow: 1em 1em 0px 2px $color-brand-dark-transparent;
         border-radius: 1em;
         
         section.intro {
             padding: 1em;
-            background: $color-primary-3;
+            background: $color-brand;
             border-radius: 1em 0 0 1em;
             width: 66%;
         }
@@ -49,7 +46,6 @@
             display: block;
             flex-basis: 60%;
             border-radius: 0 1em 1em 0;
-            height: 100%;
         }
 
         p {

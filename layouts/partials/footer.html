@@ -1,13 +1,16 @@
 <footer class="site-footer" role="contentinfo">
+    <div class="declarations">
+        {{- partial "custom_footer.html" . -}}
+    </div>
     <nav>
         <div>
             <h3>Explore</h3>
             <ul class="c-vertical-list">
                 <li>
-                    <li><a href="/pages/press/">Press</a></li>
-                    <li><a href="/research/">Blogs</a></li>
-                    <li><a href="/pages/contact/">Contact</a></li>
-                    <li><a href="/pages/performance/">Performance</a></li>
+                <li><a href="/pages/press/">Press</a></li>
+                <li><a href="/research/">Blogs</a></li>
+                <li><a href="/pages/contact/">Contact</a></li>
+                <li><a href="/pages/performance/">Performance</a></li>
                 </li>
             </ul>
         </div>
@@ -15,8 +18,8 @@
             <h3>Legal</h3>
             <ul class="c-vertical-list">
                 <li>
-                    <li><a href="/pages/terms/">Terms</a></li>
-                    <li><a href="/pages/privacy/">Privacy</a></li>
+                <li><a href="/pages/terms/">Terms</a></li>
+                <li><a href="/pages/privacy/">Privacy</a></li>
                 </li>
             </ul>
         </div>
@@ -24,12 +27,14 @@
             <h3>Follow</h3>
             <ul class="c-vertical-list">
                 <li>
-                    <li><a href="https://twitter.com/">Twitter</a></li>
-                    <li><a href="https://linkedin.com/">Linked-In</a></li>
-                    <li><a href="https://facebook.com/">Facebook</a></li>
+                <li><a href="https://twitter.com/">Twitter</a></li>
+                <li><a href="https://linkedin.com/">Linked-In</a></li>
+                <li><a href="https://facebook.com/">Facebook</a></li>
                 </li>
             </ul>
         </div>
     </nav>
-    <p>Website Design and development by <a rel="noopener" href="https://github.com/vijayabharathib">Vijayabharathi B</a>. Copyright <a href="https://pineboat.in">{{- $.Site.Title -}}</a> © 2019</p>
+    <p class="design_firm_info">Website Design and development by <a rel="noopener"
+            href="https://github.com/vijayabharathib">Vijayabharathi B</a>. Copyright <a
+            href="https://pineboat.in">{{- $.Site.Title -}}</a> © 2019</p>
 </footer>

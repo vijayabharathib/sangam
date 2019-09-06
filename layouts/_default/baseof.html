@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
     {{- partial "head.html" . -}}
+    {{ $.Scratch.Set "home_class" "" }}
+    {{ if .IsHome }}
+    {{ $.Scratch.Set "home_class" "hero" }}
+    <body class="home">
+    {{ else }}
     <body>
+    {{ end }}
         <div class="site-grid">
-                {{- partial "header.html" . -}}
-                <main class="site-main">
-                    {{- block "main" . }}{{- end }}
-                </main>
-                {{- partial "footer.html" . -}}
-            </div>
-        </body>
+            {{- partial "header.html" . -}}
+            <main class="site-main">
+                {{ $home_class := $.Scratch.Get "home_class" }}
+                <div class="main-content {{ $home_class }}">{{- block "main" . }}{{- end }}</div>
+                {{ if templates.Exists "partials/side-bar.html" }}
+                    <div class="content-aside">{{- partial "side-bar.html" . -}}</div>
+                {{ end }}
+            </main>
+            {{- partial "footer.html" . -}}
+        </div>
+    </body>
 </html>

@@ -1,24 +1,25 @@
-$color-primary-0: #b47;
-$color-primary-1: #fef;
-$color-primary-2: #ebe;
-$color-primary-3: #835;
-$color-primary-4: darken($color-primary-3,10%);
+$color-brand: #835 !default;
+$color-contrast: #295 !default;	
+$color-brand-light: lighten($color-brand,10%) !default;
+$color-brand-dark: darken($color-brand,10%) !default;
+$color-brand-dark-transparent: transparentize($color-brand-dark,.1) !default;
+
 $color-primary-white: #fffcfc;
 
-$color-grey-0: #423;	// Main grey color */
-$color-grey-1: #756;
-$color-grey-2: #534;
-$color-grey-3: #312;
-$color-grey-4: #201;
+$color-grey: #eee;
+$color-grey-light: #f2f2f2;
+$color-grey-dark: #222;
 
-$color-complement-0: #7B2;	// Main Complement color */
-$color-complement-1: #ae6;
-$color-complement-2: #8d4;
-$color-complement-3: #591;
-$color-complement-4: #360;
+$color-contrast-light: lighten($color-contrast,10%) !default;
+$color-contrast-dark: darken($color-contrast,10%) !default;
+$color-contrast-dark-transparent: transparentize($color-contrast-dark,.1) !default;
 
 
-$color-brand: $color-primary-3;
-$color-page-background: $color-primary-white;
-$color-text: $color-primary-4;
-$color-link: $color-primary-3;
+$color-page-background: $color-grey;
+$color-content-background: $color-grey-light;
+
+$color-text: $color-grey-dark;
+$color-text: rgba(50,50,50,.8);
+$color-link-light: lighten($color-contrast,25%);
+$color-link-dark: $color-contrast-dark;
+
