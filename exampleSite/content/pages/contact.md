@@ -1,7 +1,13 @@
 ---
-title: "Contact"
----
+title: Contact
+menu:
+  main:
+    Name: More
+    Pre: icon-more
+    name: Forestry
+    weight: 1
 
+---
 You can drop by at our office any time. Call us when you wish. Drop an email if that suits you. Or just initiate a chat here. 
 
 You can also send a message through Whatsapp <a class="whatsapp" href="https://api.whatsapp.com/send?phone={{$.Site.Params.whatsapp}}&text=&source=&data=">here</a>.

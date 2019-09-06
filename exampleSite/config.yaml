@@ -1,52 +1,27 @@
-baseURL: "http://example.org/"
-languageCode: "en-us"
-title: "Sangam Theme"
-theme: "sangam"
+---
+baseURL: http://example.org/
+languageCode: en-us
+title: Sangam Theme
+theme: sangam
 themesdir: "../.."
-params: 
-  subtitle: "Hugo Theme For Business"
+params:
+  subtitle: Hugo Theme For Business
   brand_color: "#444"
-  contrast_color: ""
+  contrast_color: ''
 menu:
   main:
-      - Name: "Home"
-        Identifier: "home"
-        URL: "/"
-        weight: 111
-        Pre: "icon-home"
-      - Name: "About"
-        Identifier: "about"
-        URL: "/pages/about/"
-        weight: 222
-        Pre: "icon-about"
-      - Name: "Research"
-        Identifier: "research"
-        URL: "/research/"
-        weight: 333
-        Pre: "icon-research"
-      - Name: "Contact"
-        Identifier: "contact"
-        URL: "/pages/contact/"
-        weight: 444
-        Pre: "icon-contact"
-      - Name: More
-        Pre: "icon-more"
-      # - Name: "Press"
-      #   Identifier: "press"
-      #   URL: "/press/"
-      #   weight: 555
-    
-      #   Pre: "icon-home"
-      # - Name: "Performance"
-      #   Identifier: "performance"
-      #   URL: "/performance/"
-      #   weight: 666
-    
-      #   Pre: "icon-home"
-      # - Name: Investment Philosophy
-      #   Identifier: "philosophy"
-      #   URL: "/investment-philosophy/"
-      #   weight: 777
-    
-      #   Pre: "icon-home" 
-  
+  - Pre: icon-research
+    URL: "/research/"
+    Name: Research
+    weight: 4
+    Identifier: research
+  - Pre: icon-about
+    URL: "/pages/about/"
+    Name: About
+    weight: 3
+    Identifier: about
+  - Pre: icon-contact
+    URL: "/pages/contact/"
+    Name: Contact
+    weight: 5
+    Identifier: contact
