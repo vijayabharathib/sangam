@@ -10,7 +10,7 @@
     section.hero-image {
         height: 30vh;
         height: calc(20vh + 30vw);
-        background: url(/img/hero_small_mobile.png) no-repeat center center;
+        background: url(/img/hero_mobile.png) no-repeat center center;
         background-size: cover;
     }
     
@@ -41,7 +41,7 @@
         }
         
         section.hero-image {
-            background: url(/img/small_hero.png) no-repeat center center;
+            background: url(/img/hero.png) no-repeat center center;
             background-size: cover;
             display: block;
             flex-basis: 60%;
