@@ -13,8 +13,11 @@
         <link rel="stylesheet" href="{{ $final.RelPermalink }}" media="screen">
     {{ else }}
         {{ $cssOpts2 := (dict "targetPath" "styles/default.css" ) }}
-        {{ $styles2 := resources.Get "styles/default.scss" | toCSS $cssOpts2 | postCSS | minify | fingerprint }}
-        <link rel="stylesheet" href="{{ $styles2.RelPermalink }}" media="screen">
+        {{ $theme := resources.Get "styles/10.settings/_theme.scss" | resources.ExecuteAsTemplate "styles/theme.scss" . }}
+        {{ $styles := resources.Get "styles/default.scss" }}
+        {{ $combined := slice $theme $styles | resources.Concat "styles/main.scss" }}
+        {{ $final := $combined | toCSS $cssOpts2 | postCSS | minify | fingerprint }}
+        <link rel="stylesheet" href="{{ $final.RelPermalink }}" media="screen">
     {{ end }}
     <!-- end of style sheets -->
     <link rel="canonical" href="{{ .URL | absLangURL }}" />

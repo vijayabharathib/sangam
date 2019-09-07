@@ -1,5 +1,10 @@
-
+.o-site-nav ul {
+    height: 100%;
+}
 .list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &#{&} {
         @media (min-width: $break-point-small) {
             flex-basis: 100%;

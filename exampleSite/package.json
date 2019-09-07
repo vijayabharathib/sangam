@@ -1,9 +1,0 @@
-{
-    "name": "Sangam_Hugo_Theme",
-    "version": "0.1.0",
-    "homepage": "https://github.com/vijayabharathib/sangam",
-    "devDependencies": {
-        "postcss-cli": "~6.0.0",
-        "postcss-preset-env": "^5.3.0"
-    }
-}

@@ -1,0 +1,10 @@
+{{ with .category }} 
+<div>
+    <h3>{{- .name -}}</h3>
+    <ul class="c-vertical-list">
+            {{ range .list }}
+            <li><a href="{{- .URL -}}">{{ .Title }}</a></li>
+            {{ end }}
+    </ul>
+</div>
+{{ end }}
