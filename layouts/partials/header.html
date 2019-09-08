@@ -5,7 +5,11 @@
             <img src="/img/site_logo.svg" class="c-logo-image" alt="logo" />
         </a>
         </figure>
+        {{ if .IsHome }}
         <a href="/" class="site-title"><h1>{{ $.Site.Title }}</h1></a>
+        {{ else }}
+        <a href="/" class="site-title"><h2>{{ $.Site.Title }}</h2></a>
+        {{ end }}
     </div>
     <nav class="o-site-nav">    
         <ul class="c-flat-list" >

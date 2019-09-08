@@ -1,6 +1,7 @@
-<aside class="side-bar" role="complementary">
-    {{ range $.Site.Data.feeds }}
-        {{ partial "feeds.html" . }}
-    {{ end }}
-</aside>
-      
+{{ if ne .Params.sidebar false }}
+    <aside class="side-bar" role="complementary">
+        {{ range $.Site.Data.feeds }}
+            {{ partial "feeds.html" . }}
+        {{ end }}
+    </aside>
+{{ end }}      
