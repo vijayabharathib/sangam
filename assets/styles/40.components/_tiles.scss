@@ -36,12 +36,12 @@
         }
         &>li {
             max-width: 80%;
+            margin: 1em 0;
+            
             @media (min-width: 500px) {
                 max-width: 13em;
+                margin: 1em .5em;
             }
-            
-
-            margin: 1em 0;
 
             &>section {
                 padding: .5em;

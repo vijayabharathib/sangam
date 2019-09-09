@@ -12,9 +12,6 @@ html {
     height: 100%;
     background-color: $color-page-background;
     color: $color-text;
-    font-size: 18px;
-    font-size: calc(18px + .2vw);
-    font-weight: 300;
     letter-spacing: 0.02em;
     word-spacing: .1em;
     line-height: 1.5;
@@ -24,12 +21,20 @@ html {
 
 body {
     height: 100%;
+    font-size: 16px;
+    font-size: calc(18px + .2vw);
+    @media (min-width: $break-point-small) {
+        font-weight: 300;
+    }
 }
 
 p {
     margin: 1.5em 0;
-    margin: calc(1em + .2vw) 0;
-    line-height: 1.9;
+    margin: calc(1em + .5vw) 0;
+    line-height: calc(1.5em + .2vw);
+    @media (min-width: $break-point-small) {
+        line-height: 1.9;
+    }
 }
 
 a {
@@ -43,4 +48,8 @@ a {
 
 img, h1 {
     width: 100%;
+}
+
+h1 {
+    font-size: calc(1.6rem + 1.6vw)
 }

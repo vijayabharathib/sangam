@@ -6,7 +6,7 @@
         justify-content: center;
         max-width: 600px;
         margin: 0 auto;
-        @media (min-width: $break-point-small) {
+        @media (min-width: 75em) {
             margin: 0 0 0 auto;
         }
     }
