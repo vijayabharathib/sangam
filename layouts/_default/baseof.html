@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     {{- partial "head.html" . -}}
     
     {{ $.Scratch.Set "home_class" "" }}
@@ -10,26 +10,21 @@
     {{ $.Scratch.Set "list_class" "tiles" }}
     {{ end }}
 
-    {{ if .IsHome }}
-    {{ $.Scratch.Set "home_class" "hero" }}
-    <body class="home">
-    {{ else }}
     <body>
-    {{ end }}
         <div class="site-grid">
             {{- partial "header.html" . -}}
-            <main class="site-main">
-                {{ $home_class := $.Scratch.Get "home_class" }}
+            <div class="site-main">
                 {{ $list_class := $.Scratch.Get "list_class" }}
 
-                <div class="main-content {{ $list_class }} {{ $home_class }}">{{- block "main" . }}{{- end }}</div>
+                <main id="main" class="main-content {{ $list_class }}">{{- block "main" . }}{{- end }}</main>
                 {{ if (ne .Params.sidebar false) }}
                 {{ if templates.Exists "partials/sidebar.html" }}
                     <div class="content-aside" role="complementary">{{- partial "sidebar.html" . -}}</div>
                 {{ end }}
                 {{ end }}
-            </main>
+            </div>
             {{- partial "footer.html" . -}}
         </div>
+        {{- partial "freshchat.html" . -}}
     </body>
 </html>

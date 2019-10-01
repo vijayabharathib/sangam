@@ -33,3 +33,15 @@
     }
   }
 }
+
+.skip-to-main a {
+  font-size: 1px;
+  max-width: 1px;
+  overflow: hidden;
+  &:focus {
+    max-width: fit-content;
+    overflow: auto;
+    font-size: 1em;
+    color: white;
+  }
+}

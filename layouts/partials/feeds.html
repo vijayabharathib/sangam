@@ -3,7 +3,7 @@
     <h3>{{- .name -}}</h3>
     <ul class='c-feed-list'>
             {{ range .list }}
-            <li class='{{ index . "new" }}'><a href={{- .URL -}}><h4>{{ .Title }}</h4></a><a href={{- .URL -}}><p>{{.Description}}</p></a></li>
+            <li class='{{ index . "new" }}'><a href={{- .URL -}}><h4>{{ .Title }}</h4><p>{{.Description}}</p></a></li>
             {{ end }}
     </ul>
 </div>
