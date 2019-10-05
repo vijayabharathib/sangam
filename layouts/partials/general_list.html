@@ -5,7 +5,7 @@
                 {{ if (isset .Params "icon") }}
                     <svg class="tile-icon {{ .Params.icon }}"><use xlink:href="/img/svg_sprite.svg#{{- .Params.icon -}}"></use></svg>
                 {{ end}}
-                <a class="title" href={{- .RelPermalink -}}><h2>{{ .Title }}</h3></a>
+                <a class="title" href={{- .RelPermalink -}}><h2>{{ .Title }}</h2></a>
                 <a class="subtitle" href={{- .RelPermalink -}}><p>{{- .Params.Subtitle -}}</p></a>
                 <a class="read-more" href={{- .RelPermalink -}}><span>Read More...</span><span class="arrow">⇒</span></span></a>
             </section>

@@ -1,6 +1,19 @@
 {{define "main"}}
-<h1>{{ .Title }}</h1>
-<p class="subtitle">{{ .Params.subtitle }}</p>
-{{ .Content }}
-{{ partial "general_list.html" .}}
-{{end}}
+{{ if (isset .Params "show_first_post" )}}
+    {{ range first 1 .Data.Pages }}
+    <article role="main" class="page-content">
+        <h1>{{ .Title }}</h1>
+        <p class="subtitle">{{ .Params.subtitle }}</p>
+        {{ .Content }}
+        </article>
+    {{end}}
+    <hr>
+    <h2>{{.Title}}</h2>
+    {{ partial "general_list.html" .}}
+{{ else }}
+    <h1>{{ .Title }}</h1>
+    <p class="subtitle">{{ .Params.subtitle }}</p>
+    {{ .Content }}
+    {{ partial "general_list.html" .}}
+    {{end}}
+{{ end }}
