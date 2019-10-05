@@ -3,7 +3,9 @@
     <section class="intro">
       <h2>{{ .Title }}</h2>
       <p>{{ .Content }}</p>
+      {{ if (isset .Params "cta" ) }}
       <div class="cta"><a class="cta-link" href="{{ .Params.cta_link }}">{{ .Params.cta }}</a></div>
+      {{ end }}
     </section>
     <section class="hero-image">
     </section>

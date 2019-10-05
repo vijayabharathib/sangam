@@ -16,7 +16,7 @@ body {
   grid-area: main;
   display: flex;
   flex-direction: column;
-  background: #f4f4f4;
+  background: #fafefa;
   @media (min-width: $break-point-small) {
     flex-direction: row;
     padding: 1em;

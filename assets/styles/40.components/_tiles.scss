@@ -24,34 +24,92 @@
         }
     }
 
+    // .c-article-list {
+    //     display: flex;
+    //     // flex-direction: column;
+    //     justify-content: space-around;
+    //     flex-wrap: wrap;
+    //     flex-direction: row;
+        
+    //     @media (min-width: $break-point-small) {
+    //         justify-content: center;
+    //     }
+    //     &>li {
+    //         max-width: 80%;
+    //         margin: 1em 0;
+            
+    //         @media (min-width: 500px) {
+    //             max-width: 13em;
+    //             margin: 1em .5em;
+    //         }
+
+    //         &>section {
+    //             padding: .5em;
+    //             display: flex;
+    //             justify-content: space-between;
+    //             height: 100%;
+    //             flex-direction: column;
+    //         }
+    //     }
+    // }
+
     .c-article-list {
         display: flex;
-        // flex-direction: column;
         justify-content: space-around;
         flex-wrap: wrap;
-        flex-direction: row;
-        
+        flex-direction: column;
+        margin-top: 1em;
         @media (min-width: $break-point-small) {
             justify-content: center;
         }
         &>li {
-            max-width: 80%;
-            margin: 1em 0;
-            
-            @media (min-width: 500px) {
-                max-width: 13em;
-                margin: 1em .5em;
+            min-height: 100%;
+            min-height: 100vh;
+            padding: 3em 1em;
+            h2 {
+                font-size: calc( 3em + 1vw );
             }
+            p {
+                font-size: calc(1em + 1vw );
+            }
+            @media (min-width: $break-point-small){
+                h2 {
+                    font-size: calc( 3em + 1vw );
+                }
+                p {
+                    font-size: calc(1em + 1vw );
+                }
+            }
+            &:nth-child(odd){
+                background: #17224f;
+                // background: linear-gradient(-45deg, #fff 30%,#124 30% 100%);
+                a {
+                    color: #fff;
+                }
 
+
+
+                .subtitle {
+                    flex-basis: inherit;
+                }
+            }
+            &:nth-child(even){
+                // background: linear-gradient(45deg, #fff 30%,#124 30% 100%);
+                a {
+                    color: #17224f;
+                }
+            }
             &>section {
-                padding: .5em;
                 display: flex;
                 justify-content: space-between;
                 height: 100%;
                 flex-direction: column;
+                min-height: 90%;
+                min-height: 90vh;
             }
         }
     }
+
     a {
         text-decoration: none;
         cursor: pointer;

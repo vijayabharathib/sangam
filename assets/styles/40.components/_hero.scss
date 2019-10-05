@@ -24,6 +24,10 @@
         margin: 1em;
     }
 
+    ul {
+        list-style: none;
+        padding: 0;
+    }
     @media (min-width: $break-point-small) {
         text-align: center;
         color: $color-primary-white;
