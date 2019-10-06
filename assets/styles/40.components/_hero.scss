@@ -1,10 +1,12 @@
 .hero {
     display: flex;
     flex-direction: column-reverse;
-
+    min-height: 80vh;
+    background: url(/img/hero_mobile.png) no-repeat top;
+    background-size: contain;
     section.intro {
         padding: 5px;
-        text-align: center;
+        text-align: left;
     }
 
     section.hero-image {
@@ -36,12 +38,12 @@
         margin: 0 auto;
         // box-shadow: 1em 1em 0px 2px $color-brand-dark-transparent;
         border-radius: 1em;
-        
+        background: url(/img/hero.png) no-repeat center center;
+        background-size: cover;
         section.intro {
             padding: 1em;
-            background: $color-brand;
-            border-radius: 1em 0 0 1em;
-            width: 66%;
+            // background: $color-brand;
+            border-radius: 1em;
         }
         
         section.hero-image {
@@ -59,7 +61,8 @@
         }
 
         h2 {
-            max-width: 90%;
+            max-width: 60%;
+            color: $color-text;
         }
     }
 
