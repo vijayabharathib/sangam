@@ -1,7 +1,33 @@
-{{ if ne .Params.sidebar false }}
+<!-- {{ if ne .Params.sidebar false }}
     <aside class="side-bar">
         {{ range $.Site.Data.feeds }}
             {{ partial "feeds.html" . }}
+        {{ end }}
+    </aside>
+{{ end }}       -->
+
+{{ if ne .Params.sidebar false }}
+    <aside class="side-bar">
+        {{ $page := . }}
+        {{ range .Params.feed_file_names }}
+            {{ if ne  . "section_index" }}
+                {{ with (index $.Site.Data.feeds . ) }}
+                    {{ partial "feeds.html" . }}
+                {{ end }}
+            {{ else }}
+                {{ if eq $page.Kind "section" }}
+                    {{ $section := where $.Site.RegularPages "Section" $page.Section }}
+                    {{ $section_page := $.Site.GetPage "section" $page.Section }}
+                    <div class="feed">
+                        <h3>{{- $section_page.Title -}}</h3>
+                        <ul class='c-feed-list'>
+                                {{ range $section }}
+                                <li><a href={{- .Permalink -}}><h4>{{ .Title }}</h4><p>{{.Description}}</p></a></li>
+                                {{ end }}
+                        </ul>
+                    </div>
+                {{ end }}
+            {{ end }}
         {{ end }}
     </aside>
 {{ end }}      

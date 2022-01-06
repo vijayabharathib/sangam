@@ -7,9 +7,9 @@
         </a>
         </figure>
         {{ if .IsHome }}
-        <a href="/" class="site-title"><h1>{{ $.Site.Title }}</h1></a>
+        <a href="/" class="site-title"><h1>{{ $.Site.Title }}</h1><p class="moto">{{ $.Site.Params.subtitle }}</p></a>
         {{ else }}
-        <a href="/" class="site-title"><h2>{{ $.Site.Title }}</h2></a>
+        <a href="/" class="site-title"><h2>{{ $.Site.Title }}</h2><p class="moto">{{ $.Site.Params.subtitle }}</p></a>
         {{ end }}
     </div>
     <nav class="o-site-nav">    

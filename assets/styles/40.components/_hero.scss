@@ -6,7 +6,8 @@
     background-size: contain;
     section.intro {
         padding: 5px;
-        text-align: left;
+        text-align: center;
+        margin: 1em auto 0;
     }
 
     section.hero-image {
@@ -42,8 +43,8 @@
         background-size: cover;
         section.intro {
             padding: 1em;
-            // background: $color-brand;
             border-radius: 1em;
+            text-align: left;
         }
         
         section.hero-image {

@@ -2,9 +2,7 @@
 <html lang="en">
     {{- partial "head.html" . -}}
     
-    {{ $.Scratch.Set "home_class" "" }}
     {{ $.Scratch.Set "list_class" "" }}
-    {{ $.Scratch.Set "display_side_bar" "" }}
     
     {{ if (isset .Params "tiles") }}
     {{ $.Scratch.Set "list_class" "tiles" }}

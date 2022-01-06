@@ -10,6 +10,14 @@
     h1,h2,
     .o-logo {
         margin: 0 1em;
+        line-height: 1;
+    }
+
+    .moto {
+        line-height: 1.2;
+        margin: 0;
+        font-size: .8em;
+        font-weight: 300;
     }
 }
 
@@ -26,6 +34,7 @@
         width: 100%;
         height: 100%;
         max-width: 50px;
+        display: block;
     }
 }
 
